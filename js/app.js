@@ -11,15 +11,16 @@ function body_OnLoad(){
 }
 
 function getData(){
-	console.log('getData');
-	var url = "http://www.zon.allalla.com";
-	var script = document.createElement("script");
-	script.setAttribute("src", url);
-	document.head.appendChild(script);
-	console.log('endGetData');
+	    console.log('getData');
+        var url = "zon.allalla.com";
+        var script = document.createElement("script");
+        script.setAttribute("src", url);
+        document.head.appendChild(script);
+        console.log('endGetData');
 }
 
 function callback(data){
+	var holidays = JSON.parse(data);
 	console.log('callback');
 	console.log(data);
 	
